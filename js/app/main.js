@@ -1,31 +1,43 @@
 function getImg(){
 
-var allImages = "";
-var j = 1;
+var allImages = '';
+var columns = '';
+var j = 0;
+var i = 0;
+var k = 1;
+var imgNumber = 20;
+var columnNumber = 3;
 
-for (var i = 1; i < 21; i++) {
+for(k=1; k<=columnNumber; k++){
+  columns = '<div id="photos' + k + '" class="mosaic"></div>';
+  $('.container').append(columns);
+
+}
+$('.container').append('<hr>');
+var timer =  setInterval(function(){
+  myTimer();
+
+}, 100);
+
+function killInterval(){
+  clearInterval(timer);
+}
+
+function myTimer(){
+  i++;
+  j++;
+
+  if(j>columnNumber){
+    j=1;
+  }
+  if(i>imgNumber){
+    killInterval();
+    $('hr').fadeIn();
+  }else{
   allImages = '<img src="./images/' + i + '.jpg">';
   $('#photos' + j).append(allImages);
-var timer =  setTimeout(function(){
-  $('[src="./images/' + i + '.jpg"]').fadeOut(5000);
-
-}, 1000);
-  j++;
-  if(j>3){j=1;}
+  $('[src="./images/' + i + '.jpg"]').fadeIn(700);
+  }
 }
-var h1 = 0
-
-// For each .box element
-  $('#photos1').each(function() {
-    // Set up the variables
-    var $this = $(this);
-
-    h1 = $this.find('img').height(); // Height of the image inside .box
-    h2 = $this.height(); // Set width and height of .box to match image
-
-  });
-//alert(h2);
-$('.container').css('height', h1);
-$('img').fadeOut(5000);
 
 }
