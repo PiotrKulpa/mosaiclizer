@@ -3,15 +3,13 @@ html, body{
 	margin: 0px;
 }
 .container{
-	width: 500px;
+	width: 80%;
 	height: auto;
 	margin: auto;
 	background-color: black;
 }
 #photos1, #photos2, #photos3  {
 		float: left;
-		width: 33.33%;
-		//height: 100%;
 }
 .mosaic img {
 

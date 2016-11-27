@@ -5,14 +5,19 @@ var columns = '';
 var j = 0;
 var i = 0;
 var k = 1;
-var imgNumber = 20;
-var columnNumber = 3;
+var imgNumber = 10;
+var columnNumber = 4;
+var mosaicWidth = 100 / columnNumber;
+
+
 
 for(k=1; k<=columnNumber; k++){
   columns = '<div id="photos' + k + '" class="mosaic"></div>';
   $('.container').append(columns);
 
 }
+
+$('.mosaic').css('width', mosaicWidth + '%');
 $('.container').append('<hr>');
 var timer =  setInterval(function(){
   myTimer();
