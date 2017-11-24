@@ -1,0 +1,27 @@
+{
+  "name": "mosaiclizer",
+  "description": "horizontal mosaic image gallery",
+  "main": "index.js",
+  "authors": [
+    "p.kulpa@onet.eu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "galler",
+    "mosaic"
+  ],
+  "homepage": "https://github.com/PiotrKulpa/mosaiclizer",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "mosaiclizer",
+  "version": "1.0.0",
+  "description": "horizontal mosaic image gallery",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiotrKulpa/mosaiclizer.git"
+  },
+  "keywords": [
+    "gallery",
+    "mosaic"
+  ],
+  "author": "p.kulpa@onet.eu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiotrKulpa/mosaiclizer/issues"
+  },
+  "homepage": "https://github.com/PiotrKulpa/mosaiclizer#readme",
+  "devDependencies": {
+    "bower-min": "^1.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.0",
+    "gulp-main-bower-files": "^1.6.2",
+    "gulp-minify": "^2.1.0",
+    "pump": "^1.0.3",
+    "stream-series": "^0.1.1"
+  }
+}

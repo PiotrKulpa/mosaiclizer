@@ -1,0 +1,36 @@
+html, body{
+	margin: 0px;
+}
+.container{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	background-color: black;
+
+}
+.mosaic  {
+		float: left;
+
+
+
+}
+.mosaic img {
+	width: 100%;
+  border: solid 1px grey;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 0px;
+	-webkit-transition: transform 300ms;
+	-moz-transition: transform 300ms;
+	-o-transition: transform 300ms;
+  transition: transform 300ms;
+
+}
+.mosaic img:hover {
+	transform: scale(1.1);
+}
+
+hr{
+    clear: both;
+
+}
