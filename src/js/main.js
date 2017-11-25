@@ -1,13 +1,33 @@
+/**
+ * Represents a mosaic gallery.
+ *
+ * @constructor
+ * @author: p.kulpa@onet.pl
+ * @param {number} columns - The number of gallery columns.
+ * @param {array} images - The array of source images.
+ */
 function Mosaiclizer (columns, images) {
-  this._columns = columns;
-  this._images = images;
-  this.imgNumber = this._images.length;
+  /** @private */ this._columns = columns;
+  /** @private */ this._images = images;
+  /** @private */ this.imgNumber = this._images.length;
 };
 
+/**
+ * Calculates the column width of the gallery.
+ *
+ * @this {Mosaiclizer}
+ * @return {string} The width in % of the single column.
+ */
 Mosaiclizer.prototype.setColumnWidth = function () {
   return 100 / this._columns + '%';
 };
 
+/**
+ * Creates HTML code of columns with id="photos.
+ *
+ * @this {Mosaiclizer}
+ * @return {string} The HTML code of columns.
+ */
 Mosaiclizer.prototype.setColumns = function () {
   var _columnsHtml = '';
   for (var c = 1; c <= this._columns; c++) {
@@ -17,6 +37,11 @@ Mosaiclizer.prototype.setColumns = function () {
        return _columnsHtml;
 };
 
+/**
+ * Appends HTML code of columns with id="photos to .container element.
+ *
+ * @this {Mosaiclizer}
+ */
 Mosaiclizer.prototype.appendColumns = function () {
   var that = this;
   $('.container').append(that.setColumns());
@@ -24,6 +49,11 @@ Mosaiclizer.prototype.appendColumns = function () {
 
 };
 
+/**
+ * Preloads images.
+ *
+ * @this {Mosaiclizer}
+ */
 Mosaiclizer.prototype.loadImages = function () {
   var _imgs = [],
       remaining = this.imgNumber,
@@ -42,10 +72,21 @@ Mosaiclizer.prototype.loadImages = function () {
   }
 };
 
+/**
+ * Creates  images HTML code.
+ *
+ * @this {Mosaiclizer}
+ * @return {string}
+ */
 Mosaiclizer.prototype.setImages = function (i) {
   return '<img src="./images/' + this._images[i] + '" />';
 };
 
+/**
+ * Appends HTML code of images to .cointainer.
+ *
+ * @this {Mosaiclizer}
+ */
 Mosaiclizer.prototype.appendImages = function () {
   var _imgHtml = '',
       j = 0;

@@ -1,0 +1,43 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+html, body{
+	margin: 0px;
+  padding: 0px;
+}
+.container{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	background-color: black;
+
+}
+.mosaic  {
+		float: left;
+
+
+
+}
+.mosaic img {
+	width: 100%;
+  border: solid 1px grey;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin: 0px;
+	-webkit-transition: transform 300ms;
+	-moz-transition: transform 300ms;
+	-o-transition: transform 300ms;
+  transition: transform 300ms;
+
+}
+.mosaic img:hover {
+	transform: scale(1.1);
+}
+
+hr{
+    clear: both;
+
+}

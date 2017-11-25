@@ -67,13 +67,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 7, ../sass/main.scss */
+/* line 7, ../sass/screen.scss */
 html, body {
   margin: 0px;
-  padding: 0px;
 }
 
-/* line 11, ../sass/main.scss */
+/* line 10, ../sass/screen.scss */
 .container {
   width: 80%;
   height: auto;
@@ -81,12 +80,12 @@ html, body {
   background-color: black;
 }
 
-/* line 18, ../sass/main.scss */
+/* line 17, ../sass/screen.scss */
 .mosaic {
   float: left;
 }
 
-/* line 24, ../sass/main.scss */
+/* line 23, ../sass/screen.scss */
 .mosaic img {
   width: 100%;
   border: solid 1px grey;
@@ -99,12 +98,12 @@ html, body {
   transition: transform 300ms;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 35, ../sass/screen.scss */
 .mosaic img:hover {
   transform: scale(1.1);
 }
 
-/* line 40, ../sass/main.scss */
+/* line 39, ../sass/screen.scss */
 hr {
   clear: both;
 }
